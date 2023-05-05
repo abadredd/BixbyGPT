@@ -1,0 +1,11 @@
+action (SaySomething) {
+  type(Search)
+  description (__DESCRIPTION__)
+  collect {
+    input (apiInput) {
+      type (ApiInput)
+      min (Required) max (One)
+    }
+  }
+  output (ApiOutput)
+}
